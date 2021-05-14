@@ -82,10 +82,12 @@ class Spirale:
     def add_product(self, product):
         if len(self.__products) < 7:
             self.__products.append(product)
+        return product
 
     def remove_product(self, product):
         if len(self.__products) > 0:
             self.__products.remove(product)
+        return product
 
     def turn_spirale(self):
         return True
